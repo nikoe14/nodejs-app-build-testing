@@ -1,0 +1,14 @@
+{
+  "name": "nico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cpx src/* build/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cpx": "^1.5.0"
+  }
+}
