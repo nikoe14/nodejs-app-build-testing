@@ -1,0 +1,22 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - npm install
+  pre_build:
+    commands:
+      - echo nothing to do in pre-build
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Server ...          
+      - npm test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - npm run build
+artifacts:
+  files: 
+    - build
